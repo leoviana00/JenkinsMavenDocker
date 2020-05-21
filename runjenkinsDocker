@@ -1,0 +1,9 @@
+#Criação de volume
+docker volume create jenkins_home
+
+#criação do container
+docker run -d --name jenkins-desafio --restart always --hostname jenkins.desafio.com  -p 8282:8080 -p 50000:50000 \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v jenkins_home:/var/jenkins_home \
+leoviana00/desafio02:0.4.0
+

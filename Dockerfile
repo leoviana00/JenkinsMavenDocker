@@ -1,3 +1,14 @@
+#---------------------------------------------------------------
+# Informação
+# autor: Leonardo Viana Pereira
+# email: leonardo.viana@armateus.com.br
+# version: 0.1.0
+# Descrição: Criação de Dockerfile para instalação do
+# JENKINS, MAVEN, OPENJDK, GIT e DOCKER
+# Desafio do Curso de DevOps | Ithappens - Referente aos módulos 1 e 2
+#---------------------------------------------------------------
+#
+
 FROM jenkins/jenkins:lts
 LABEL maintainer = "leonardoviana00@hotmail.com"
 

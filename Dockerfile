@@ -10,7 +10,7 @@
 #
 
 FROM jenkins/jenkins:lts
-LABEL maintainer = "leonardoviana00@hotmail.com"
+LABEL maintainer = "leonardo.viana@armateus.com.br"
 
 USER root
 

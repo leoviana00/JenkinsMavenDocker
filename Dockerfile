@@ -43,6 +43,7 @@ RUN apt-get install -y maven
     
 #Dar permissões ao usuário jenkins
 RUN usermod -a -G docker jenkins 
+RUN chmod 666 /var/run/docker.sock
     
 #Pasta para backup do Jenkins
 RUN mkdir /srv/backup && chown jenkins:jenkins /srv/backup
